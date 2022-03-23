@@ -6,5 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <!--Header-->
+
+    <header>
+      <h1 class="headline-first">CREATE</h1>
+    </header>
+
+    <!--Forms-->
+
+    <form class="form" action="/myform" method="post">
+      <label class="form_label" for="question">Question</label>
+      <textarea
+        class="form_textarea"
+        type="text"
+        id="question"
+        name="question"
+        placeholder="Question"
+        cols="30"
+        rows="5"
+      ></textarea>
+    </form>
+
+    <form class="form" action="/myform" method="post">
+      <label class="form_label" for="answer">Answer</label>
+      <textarea
+        class="form_textarea"
+        type="text"
+        id="answer"
+        name="answer"
+        placeholder="Answer"
+        cols="30"
+        rows="2"
+      ></textarea>
+    </form>
+
+    <form class="form" action="/myform" method="post">
+      <label class="form_label" for="tags">Tags</label>
+      <textarea
+        class="form_textarea"
+        type="text"
+        id="tags"
+        name="tags"
+        placeholder="Tags (up to 4)"
+        cols="30"
+        rows="1"
+      ></textarea>
+    </form>
+
+    <!--Button-->
+
+    <button class="logout">SUBMIT</button>
+
+    <!--Footer-->
+
+    <footer class="footer">
+      <img
+        class="footer_house"
+        src="images/home_black_48dp.svg"
+        alt="black house icon"
+      />
+
+      <img
+        class="footer_bookmark"
+        src="./images/bookmark_border_black_48dp.svg"
+        alt="black bookmark sign"
+      />
+
+      <img
+        class="footer_page"
+        src="./images/post_add_black_48dp.svg"
+        alt="black page icon"
+      />
+      <img
+        class="footer_account"
+        src="./images/account_circle_black_48dp.svg"
+        alt="black account icon"
+      />
+    </footer>
+  </body>
 </html>
