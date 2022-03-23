@@ -1,0 +1,52 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+  padding: 10px;
+  border: solid 2px white;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.card_bookmark {
+  width: 4rem;
+  position: absolute;
+  right: 10px;
+  top: -20px;
+}
+
+.card_question {
+  margin: 10px;
+}
+
+.card_button {
+  background-color: #02a676;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card_answer {
+  margin: 10px;
+  font-size: 1rem;
+}
+
+.tags_list {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+
+.tags_listitem {
+  margin: 5px;
+  display: flex;
+  border: solid 2.2px white;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 1.2rem;
+  align-items: center;
+}
