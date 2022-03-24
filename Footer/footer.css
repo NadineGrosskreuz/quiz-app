@@ -1,7 +1,28 @@
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #02a676;
   position: sticky;
   bottom: 0px;
+  align-items: center;
+}
+
+.footer_house {
+  margin: 5px -10px 5px 60px;
+  height: 4.5rem;
+}
+
+.footer_bookmark {
+  margin: 5px -10px 5px -10px;
+  height: 4.5rem;
+}
+
+.footer_page {
+  margin: 5px -10px 5px -10px;
+  height: 4.5rem;
+}
+
+.footer_account {
+  margin: 5px 60px 5px -10px;
+  height: 4.5rem;
 }
