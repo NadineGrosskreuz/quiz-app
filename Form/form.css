@@ -1,8 +1,10 @@
 .form {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   position: relative;
+  gap: 10px;
+  margin: 20px;
 }
 
 .form_label {
@@ -12,40 +14,4 @@
 
 .form_textarea {
   padding: 10px;
-}
-
-.label--question {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.textarea--question {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-
-.label--answer {
-  position: absolute;
-  left: 0px;
-  top: 50px;
-}
-
-.textarea--answer {
-  position: absolute;
-  right: 0px;
-  top: 50px;
-}
-
-.label--tags {
-  position: absolute;
-  left: 0px;
-  top: 150px;
-}
-
-.textarea--tags {
-  position: absolute;
-  right: 0px;
-  top: 150px;
 }
