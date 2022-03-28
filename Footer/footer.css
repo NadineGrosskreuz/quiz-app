@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   background-color: #02a676;
-  position: sticky;
+  position: fixed;
   bottom: 0px;
   align-items: center;
+  width: 100%;
 }
 
 .footer_house {

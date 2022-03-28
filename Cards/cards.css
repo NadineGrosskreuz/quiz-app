@@ -26,6 +26,14 @@
   font-size: 1.1rem;
 }
 
+.card--1 {
+  margin-top: 80px;
+}
+
+.card--3 {
+  margin-bottom: 100px;
+}
+
 .tags_list {
   display: flex;
   flex: row;
