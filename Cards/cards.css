@@ -12,27 +12,25 @@
 
 .card_bookmark {
   width: 4rem;
-  position: absolute;
-  right: 10px;
-  top: -20px;
-}
-
-.bookmark--active {
-  width: 4rem;
-  position: absolute;
-  right: 10px;
-  top: -20px;
-  display: none;
-}
-
-.bookmark_button {
   height: 4rem;
-  width: 4rem;
   position: absolute;
   right: 10px;
   top: -20px;
-  color: #02a676;
-  z-index: -1;
+}
+.card_bookmark1 {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  right: 10px;
+  top: -20px;
+}
+
+.card_bookmark2 {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  right: 10px;
+  top: -20px;
 }
 
 .card_question {
