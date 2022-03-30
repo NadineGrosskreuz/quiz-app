@@ -1,0 +1,17 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  position: relative;
+  gap: 10px;
+  margin: 80px;
+}
+
+.form_label {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.form_textarea {
+  padding: 10px;
+}

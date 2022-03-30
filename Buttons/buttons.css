@@ -1,0 +1,51 @@
+.card_button {
+  background-color: #02a676;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  transition: box-shadow 0.2s;
+}
+
+.submit {
+  background-color: #02a676;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: box-shadow 0.2s;
+  justify-self: center;
+  grid-column: span 2;
+  align-self: center;
+}
+
+.logout {
+  background-color: #02a676;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: box-shadow 0.2s;
+}
+
+.card_button:hover {
+  cursor: pointer;
+  background-color: #005a5b;
+  box-shadow: 0 0 5px 0 white, 0 0 10px 0 white;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: #005a5b;
+  box-shadow: 0 0 5px 0 white, 0 0 10px 0 white;
+}
+
+.logout:hover {
+  cursor: pointer;
+  background-color: #005a5b;
+  box-shadow: 0 0 5px 0 white, 0 0 10px 0 white;
+}

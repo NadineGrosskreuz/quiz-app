@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Roboto Mono, sans-serif;
+}
+
+body {
+  background-color: #005a5b;
+  height: auto;
+  color: whitesmoke;
+}

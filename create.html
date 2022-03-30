@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Cinzel&family=DM+Serif+Display&family=Roboto&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Header-->
+
+    <header class="header">
+      <h1 class="headline-first">CREATE</h1>
+    </header>
+
+    <!--Forms-->
+
+    <form class="form" action="/myform" method="post">
+      <label class="form_label label--question" for="question">Question</label>
+      <textarea
+        class="form_textarea textarea--question"
+        type="text"
+        id="question"
+        name="question"
+        placeholder="Question"
+        cols="30"
+        rows="5"
+      ></textarea>
+
+      <label class="form_label label--answer" for="answer">Answer</label>
+      <textarea
+        class="form_textarea textarea--answer"
+        type="text"
+        id="answer"
+        name="answer"
+        placeholder="Answer"
+        cols="30"
+        rows="2"
+      ></textarea>
+
+      <label class="form_label label--tags" for="tags">Tags (up to 4)</label>
+      <textarea
+        class="form_textarea textarea--tags"
+        type="text"
+        id="tags"
+        name="tags"
+        placeholder="Tags"
+        cols="30"
+        rows="1"
+      ></textarea>
+
+      <button class="submit">SUBMIT</button>
+    </form>
+
+    <!--Footer-->
+
+    <footer class="footer">
+      <a href="./index.html"
+        ><img
+          class="footer_house"
+          src="./images/home_black_48dp.svg"
+          alt="black house icon"
+        />
+      </a>
+
+      <a href="./bookmarks.html"
+        ><img
+          class="footer_bookmark"
+          src="./images/bookmark_border_black_48dp.svg"
+          alt="black bookmark sign"
+        />
+      </a>
+
+      <a href="./create.html"
+        ><img
+          class="footer_page"
+          src="./images/post_add_black_48dp.svg"
+          alt="black page icon"
+        />
+      </a>
+      <a href="./profile.html"
+        ><img
+          class="footer_account"
+          src="./images/account_circle_black_48dp_filled.svg"
+          alt="black account icon"
+        />
+      </a>
+    </footer>
+    <script src="./index.js" defer></script>
+  </body>
+</html>
