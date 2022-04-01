@@ -22,9 +22,9 @@
     </header>
 
     <!--Card 1-->
-    <section class="card card--1">
+    <section class="card card--1" data-js="card">
       <svg
-        class="card_bookmark1"
+        class="card_bookmark"
         data-js="bookmark"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -36,7 +36,7 @@
         />
       </svg>
       <svg
-        class="card_bookmark2 hidden"
+        class="card_bookmark hidden"
         data-js="bookmarkActive"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -66,7 +66,7 @@
 
     <!--Card 2-->
 
-    <section class="card">
+    <section class="card" data-js="card">
       <svg
         class="card_bookmark"
         data-js="bookmark"
@@ -79,12 +79,24 @@
           d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
         />
       </svg>
-
+      <svg
+        class="card_bookmark hidden"
+        data-js="bookmarkActive"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#02a676"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+      </svg>
       <p class="card_question">How many kiosks are there in Hanover?</p>
 
-      <button class="card_button">Show answer</button>
+      <button class="card_button" data-js="answer_button">Show answer</button>
+      <button class="card_button hidden" data-js="answer_button_hide">
+        Hide answer
+      </button>
 
-      <p class="card_answer">More than 300</p>
+      <p class="card_answer hidden" data-js="answer">More than 300</p>
 
       <article class="card_tags">
         <ul class="tags_list">
@@ -98,7 +110,7 @@
 
     <!--Card 3-->
 
-    <section class="card card--3">
+    <section class="card card--3" data-js="card">
       <svg
         class="card_bookmark"
         data-js="bookmark"
@@ -111,14 +123,27 @@
           d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
         />
       </svg>
+      <svg
+        class="card_bookmark hidden"
+        data-js="bookmarkActive"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#02a676"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+      </svg>
 
       <p class="card_question">
         From which unusual object does music come in Hanover's city center?
       </p>
 
-      <button class="card_button">Show answer</button>
+      <button class="card_button" data-js="answer_button">Show answer</button>
+      <button class="card_button hidden" data-js="answer_button_hide">
+        Hide answer
+      </button>
 
-      <p class="card_answer">A gully</p>
+      <p class="card_answer hidden" data-js="answer">A gully</p>
 
       <article class="card_tags">
         <ul class="tags_list">
@@ -164,6 +189,6 @@
         />
       </a>
     </footer>
-    <script src="./index.js" defer></script>
+    <script src="./index.js" type="module" defer></script>
   </body>
 </html>
