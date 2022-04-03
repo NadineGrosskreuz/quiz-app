@@ -36,6 +36,4 @@ houseIcon.addEventListener("click", () => {
     createSite.classList.add("hidden");
     profileSite.classList.remove("hidden");
   });
-
-
 }
