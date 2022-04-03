@@ -13,8 +13,13 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
+    
+<div data-js="site_elements">
+<!--Index-->
+
+  <div class="index_site" data-js="index_site">
+  <main>
     <!--Header-->
 
     <header class="header">
@@ -22,11 +27,156 @@
     </header>
 
     <!--Card 1-->
+    <section class="card card--1" data-js="card">
+      <svg
+        class="card_bookmark"
+        data-js="bookmark"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#02a676"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+        />
+      </svg>
+      <svg
+        class="card_bookmark hidden"
+        data-js="bookmarkActive"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#02a676"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+      </svg>
+      <p class="card_question">What is "Lüttje Lage"?</p>
+
+      <button class="card_button" data-js="answer_button">Show answer</button>
+      <button class="card_button hidden" data-js="answer_button_hide">
+        Hide answer
+      </button>
+
+      <p class="card_answer hidden" data-js="answer">A drink</p>
+
+      <article class="card_tags">
+        <ul class="tags_list">
+          <li class="tags_listitem">Hanover</li>
+          <li class="tags_listitem">Lower Saxony</li>
+          <li class="tags_listitem">Germany</li>
+          <li class="tags_listitem">Europe</li>
+        </ul>
+      </article>
+    </section>
+
+    <!--Card 2-->
+
+    <section class="card" data-js="card">
+      <svg
+        class="card_bookmark"
+        data-js="bookmark"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#02a676"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+        />
+      </svg>
+      <svg
+        class="card_bookmark hidden"
+        data-js="bookmarkActive"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#02a676"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+      </svg>
+      <p class="card_question">How many kiosks are there in Hanover?</p>
+
+      <button class="card_button" data-js="answer_button">Show answer</button>
+      <button class="card_button hidden" data-js="answer_button_hide">
+        Hide answer
+      </button>
+
+      <p class="card_answer hidden" data-js="answer">More than 300</p>
+
+      <article class="card_tags">
+        <ul class="tags_list">
+          <li class="tags_listitem">Hanover</li>
+          <li class="tags_listitem">Lower Saxony</li>
+          <li class="tags_listitem">Germany</li>
+          <li class="tags_listitem">Europe</li>
+        </ul>
+      </article>
+    </section>
+
+    <!--Card 3-->
+
+    <section class="card card--3" data-js="card">
+      <svg
+        class="card_bookmark"
+        data-js="bookmark"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#02a676"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path
+          d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+        />
+      </svg>
+      <svg
+        class="card_bookmark hidden"
+        data-js="bookmarkActive"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#02a676"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+      </svg>
+
+      <p class="card_question">
+        From which unusual object does music come in Hanover's city center?
+      </p>
+
+      <button class="card_button" data-js="answer_button">Show answer</button>
+      <button class="card_button hidden" data-js="answer_button_hide">
+        Hide answer
+      </button>
+
+      <p class="card_answer hidden" data-js="answer">A gully</p>
+
+      <article class="card_tags">
+        <ul class="tags_list">
+          <li class="tags_listitem">Hanover</li>
+          <li class="tags_listitem">Lower Saxony</li>
+          <li class="tags_listitem">Europe</li>
+          <li class="tags_listitem">Germany</li>
+        </ul>
+      </article>
+    </section>
+  </div>
+
+    <!--Bookmark-->
+
+  <div class="bookmark_site hidden" data-js="bookmark_site">
+  <body>
+    <!--Header-->
+
+    <header class="header">
+      <h1 class="headline-first">BOOKMARKS</h1>
+    </header>
+
+    <!--Card 1-->
+
     <section class="card card--1">
       <img
         class="card_bookmark"
-        data-js="bookmark"
-        src="./images/bookmark.svg"
+        src="./images/bookmark_filled.svg"
         alt="black bookmark sign"
       />
 
@@ -48,10 +198,10 @@
 
     <!--Card 2-->
 
-    <section class="card">
+    <section class="card card--3">
       <img
         class="card_bookmark"
-        src="./images/bookmark.svg"
+        src="./images/bookmark_filled.svg"
         alt="black bookmark sign"
       />
 
@@ -70,68 +220,138 @@
         </ul>
       </article>
     </section>
+  </div>
 
-    <!--Card 3-->
+<!--Create-->
 
-    <section class="card card--3">
+<div class="create_site hidden" data-js="create_site">
+
+    <!--Header-->
+
+    <header class="header">
+      <h1 class="headline-first">CREATE</h1>
+    </header>
+
+    <!--Forms-->
+
+    <form class="form" action="/myform" method="post">
+      <label class="form_label label--question" for="question">Question</label>
+      <textarea
+        class="form_textarea textarea--question"
+        type="text"
+        id="question"
+        name="question"
+        placeholder="Question"
+        cols="30"
+        rows="5"
+      ></textarea>
+
+      <label class="form_label label--answer" for="answer">Answer</label>
+      <textarea
+        class="form_textarea textarea--answer"
+        type="text"
+        id="answer"
+        name="answer"
+        placeholder="Answer"
+        cols="30"
+        rows="2"
+      ></textarea>
+
+      <label class="form_label label--tags" for="tags">Tags (up to 4)</label>
+      <textarea
+        class="form_textarea textarea--tags"
+        type="text"
+        id="tags"
+        name="tags"
+        placeholder="Tags"
+        cols="30"
+        rows="1"
+      ></textarea>
+
+      <button class="submit">SUBMIT</button>
+    </form>
+
+
+</div>
+
+<!--Profile-->
+
+<div class="profile_site hidden" data-js="profile_site">
+    <!--Header-->
+
+    <header class="header">
+      <h1 class="headline-first">PROFILE</h1>
+    </header>
+
+    <!--Photo Name-->
+
+    <section class="introduction">
       <img
-        class="card_bookmark"
-        src="./images/bookmark.svg"
-        alt="black bookmark sign"
+        class="introduction_image"
+        src="./images/avataaars.svg"
+        alt="avatar woman smiling"
       />
+      <p class="introduction_name">Nadine</p>
+    </section>
 
-      <p class="card_question">
-        From which unusual object does music come in Hanover's city center?
-      </p>
+    <!--Text-->
 
-      <button class="card_button">Answer</button>
+    <p class="abouttext">I am smart, so let's get started!</p>
 
-      <p class="card_answer">A gully</p>
+    <!--Skills-->
 
-      <article class="card_tags">
-        <ul class="tags_list">
-          <li class="tags_listitem">Hanover</li>
-          <li class="tags_listitem">Lower Saxony</li>
-          <li class="tags_listitem">Europe</li>
-          <li class="tags_listitem">Germany</li>
+    <section class="skills">
+      <h2 class="skills_headline">My favorite topics</h2>
+      <article class="persontags">
+        <ul class="persontags_list">
+          <li class="persontags_listitem">Music</li>
+          <li class="persontags_listitem">Plants</li>
+          <li class="persontags_listitem">Hanover</li>
+          <li class="persontags_listitem">Coding</li>
         </ul>
       </article>
     </section>
 
+    <!--Logout-->
+
+    <button class="logout">LOGOUT</button>
+
+</div>
+</div>
+
     <!--Footer-->
 
-    <footer class="footer">
-      <a href="./index.html"
-        ><img
+    <footer class="footer" data-js="footer">
+      <img
           class="footer_house"
+          data-js="house_icon"
           src="./images/home_black_48dp.svg"
           alt="black house icon"
         />
-      </a>
-
-      <a href="./bookmarks.html"
-        ><img
+    
+     <img
           class="footer_bookmark"
+          data-js="bookmark_icon"
           src="./images/bookmark_border_black_48dp.svg"
           alt="black bookmark sign"
         />
-      </a>
-
-      <a href="./create.html"
-        ><img
+      
+      <img
           class="footer_page"
+          data-js="page_icon"
           src="./images/post_add_black_48dp.svg"
           alt="black page icon"
         />
-      </a>
-      <a href="./profile.html"
-        ><img
+    
+     <img
           class="footer_account"
+          data-js="account_icon"
           src="./images/account_circle_black_48dp_filled.svg"
           alt="black account icon"
         />
-      </a>
+      
     </footer>
-    <script src="./index.js" defer></script>
+    <script src="./index.js" type="module" defer></script>
   </body>
+
 </html>
