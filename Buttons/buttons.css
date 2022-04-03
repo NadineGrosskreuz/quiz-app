@@ -1,5 +1,5 @@
 .card_button {
-  background-color: #02a676;
+  background-color: #F2C53D;
   color: white;
   width: 100px;
   margin: 10px;
@@ -10,7 +10,7 @@
 }
 
 .submit {
-  background-color: #02a676;
+  background-color: #F2C53D;
   color: white;
   width: 100px;
   margin: 10px;
@@ -23,7 +23,7 @@
 }
 
 .logout {
-  background-color: #02a676;
+  background-color: #F2C53D;
   color: white;
   width: 100px;
   margin: 10px;
@@ -34,18 +34,18 @@
 
 .card_button:hover {
   cursor: pointer;
-  background-color: #005a5b;
+  background-color: #b89429;
   box-shadow: 0 0 5px 0 white, 0 0 10px 0 white;
 }
 
 .submit:hover {
   cursor: pointer;
-  background-color: #005a5b;
+  background-color: #b89429;
   box-shadow: 0 0 5px 0 white, 0 0 10px 0 white;
 }
 
 .logout:hover {
   cursor: pointer;
-  background-color: #005a5b;
+  background-color: #b89429;
   box-shadow: 0 0 5px 0 white, 0 0 10px 0 white;
 }
