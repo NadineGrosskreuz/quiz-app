@@ -1,7 +1,8 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  background-color: #02a676;
+  background-color: #D97236;
+  opacity: 85%;
   position: fixed;
   bottom: 0px;
   align-items: center;
@@ -10,7 +11,7 @@
 
 .footer_house {
   margin: 5px -10px 5px 60px;
-  height: 4.5rem;
+  height: 4.7rem;
 }
 
 .footer_bookmark {

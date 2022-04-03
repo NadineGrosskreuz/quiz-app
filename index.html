@@ -23,7 +23,7 @@
     <!--Header-->
 
     <header class="header">
-      <h1 class="headline-first">QUIZ-APP</h1>
+      <h1 class="headline-first">QUIZ-TIME!</h1>
     </header>
 
     <!--Card 1-->
@@ -33,7 +33,7 @@
         data-js="bookmark"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        fill="#02a676"
+        fill="#F2C53D"
       >
         <path d="M0 0h24v24H0V0z" fill="none" />
         <path
@@ -45,7 +45,7 @@
         data-js="bookmarkActive"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        fill="#02a676"
+        fill="#F2C53D"
       >
         <path d="M0 0h24v24H0V0z" fill="none" />
         <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
@@ -77,7 +77,7 @@
         data-js="bookmark"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        fill="#02a676"
+        fill="#F2C53D"
       >
         <path d="M0 0h24v24H0V0z" fill="none" />
         <path
@@ -89,7 +89,7 @@
         data-js="bookmarkActive"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        fill="#02a676"
+        fill="#F2C53D"
       >
         <path d="M0 0h24v24H0V0z" fill="none" />
         <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
@@ -121,7 +121,7 @@
         data-js="bookmark"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        fill="#02a676"
+        fill="#F2C53D"
       >
         <path d="M0 0h24v24H0V0z" fill="none" />
         <path
@@ -133,7 +133,7 @@
         data-js="bookmarkActive"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-        fill="#02a676"
+        fill="#F2C53D"
       >
         <path d="M0 0h24v24H0V0z" fill="none" />
         <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
@@ -174,17 +174,25 @@
     <!--Card 1-->
 
     <section class="card card--1">
-      <img
-        class="card_bookmark"
-        src="./images/bookmark_filled.svg"
-        alt="black bookmark sign"
-      />
+      <svg
+      class="card_bookmark"
+      data-js="bookmarkActive"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="#F2C53D"
+    >
+      <path d="M0 0h24v24H0V0z" fill="none" />
+      <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+    </svg>
 
       <p class="card_question">What is "Lüttje Lage"?</p>
 
-      <button class="card_button">Answer</button>
+      <button class="card_button" data-js="answer_button">Show answer</button>
+      <button class="card_button hidden" data-js="answer_button_hide">
+        Hide answer
+      </button>
 
-      <p class="card_answer">A drink</p>
+      <p class="card_answer hidden" data-js="answer">A drink</p>
 
       <article class="card_tags">
         <ul class="tags_list">
@@ -199,17 +207,25 @@
     <!--Card 2-->
 
     <section class="card card--3">
-      <img
+      <svg
         class="card_bookmark"
-        src="./images/bookmark_filled.svg"
-        alt="black bookmark sign"
-      />
+        data-js="bookmarkActive"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="#F2C53D"
+      >
+        <path d="M0 0h24v24H0V0z" fill="none" />
+        <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z" />
+      </svg>
 
       <p class="card_question">How many kiosks are there in Hanover?</p>
 
-      <button class="card_button">Answer</button>
+      <button class="card_button" data-js="answer_button">Show answer</button>
+      <button class="card_button hidden" data-js="answer_button_hide">
+        Hide answer
+      </button>
 
-      <p class="card_answer">More than 300</p>
+      <p class="card_answer hidden" data-js="answer">More than 300</p>
 
       <article class="card_tags">
         <ul class="tags_list">
@@ -257,7 +273,7 @@
         rows="2"
       ></textarea>
 
-      <label class="form_label label--tags" for="tags">Tags (up to 4)</label>
+      <label class="form_label label--tags" for="tags">Tags</label>
       <textarea
         class="form_textarea textarea--tags"
         type="text"
@@ -328,6 +344,14 @@
           src="./images/home_black_48dp.svg"
           alt="black house icon"
         />
+
+        <img
+          class="footer_house hidden"
+          data-js="house_icon_filled"
+          src="./images/home_black_48dp_filled.svg"
+          alt="black house icon"
+        />
+
     
      <img
           class="footer_bookmark"
@@ -335,17 +359,39 @@
           src="./images/bookmark_border_black_48dp.svg"
           alt="black bookmark sign"
         />
+
+        <img
+          class="footer_bookmark hidden"
+          data-js="bookmark_icon_filled"
+          src="./images/bookmark_black_48dp.svg"
+          alt="black bookmark sign"
+        />
+
       
       <img
           class="footer_page"
           data-js="page_icon"
-          src="./images/post_add_black_48dp.svg"
-          alt="black page icon"
+          src="./images/add_box_black_24dp.svg"
+          alt="black plus icon"
         />
+
+        <img
+        class="footer_page hidden"
+        data-js="page_icon_filled"
+        src="./images/add_box_black_24dp_filled.svg"
+        alt="black plus icon"
+      />
     
      <img
           class="footer_account"
           data-js="account_icon"
+          src="./images/account_circle_black_48dp.svg"
+          alt="black account icon"
+        />
+
+        <img
+          class="footer_account hidden"
+          data-js="account_icon_filled"
           src="./images/account_circle_black_48dp_filled.svg"
           alt="black account icon"
         />
