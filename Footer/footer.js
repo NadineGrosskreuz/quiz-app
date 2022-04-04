@@ -78,8 +78,6 @@ houseIcon.addEventListener("click", () => {
     accountIcon.classList.remove("hidden");
   });
 
-
-
   accountIcon.addEventListener("click", () => {
     bookmarkSite.classList.add("hidden");
     indexSite.classList.add("hidden");
