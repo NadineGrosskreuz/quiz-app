@@ -10,26 +10,26 @@ export default function Card(cardElement) {
   );
 
   if (bookmark) {
-    bookmark.addEventListener("click", () => {
-      bookmark.classList.toggle("hidden");
-      bookmarkActive.classList.toggle("hidden");
+    bookmark.addEventListener('click', () => {
+      bookmark.classList.toggle('hidden');
+      bookmarkActive.classList.toggle('hidden');
     });
   }
 
-  bookmarkActive.addEventListener("click", () => {
-    bookmarkActive.classList.toggle("hidden");
-    bookmark.classList.toggle("hidden");
+  bookmarkActive.addEventListener('click', () => {
+    bookmarkActive.classList.toggle('hidden');
+    bookmark.classList.toggle('hidden');
   });
 
-  button.addEventListener("click", () => {
-    answer.classList.toggle("hidden");
-    button.classList.toggle("hidden");
-    buttonHide.classList.toggle("hidden");
+  button.addEventListener('click', () => {
+    answer.classList.toggle('hidden');
+    button.classList.toggle('hidden');
+    buttonHide.classList.toggle('hidden');
   });
 
-  buttonHide.addEventListener("click", () => {
-    answer.classList.toggle("hidden");
-    button.classList.toggle("hidden");
-    buttonHide.classList.toggle("hidden");
+  buttonHide.addEventListener('click', () => {
+    answer.classList.toggle('hidden');
+    button.classList.toggle('hidden');
+    buttonHide.classList.toggle('hidden');
   });
 }
